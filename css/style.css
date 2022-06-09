@@ -1,0 +1,238 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --main-color: #4185f4;
+  --second-color: #171717;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  font-family: "ubuntu", sans-serif;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  animation: slidedown 1s both ease;
+}
+
+.navbar.sticky {
+  background-color: var(--main-color);
+  padding: 15px 0;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: 600px;
+  color: #fff;
+  user-select: none;
+}
+
+.navbar .logo a span {
+  color: var(--main-color);
+}
+
+.navbar.sticky .logo a span {
+  color: var(--second-color);
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  user-select: none;
+  transition: color 0.3s ease;
+  letter-spacing: 1.5px;
+}
+
+.navbar .menu li a:hover {
+  color: var(--main-color);
+}
+
+nav.sticky .menu li a:hover {
+  color: #fff;
+}
+
+.menu-btn {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+.home {
+  display: flex;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  min-height: 500px;
+  font-family: "ubuntu", sans-serif;
+  color: black;
+  text-transform: capitalize;
+}
+
+
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+
+.home .home-content .text1 {
+  font-size: 27px;
+  animation: zoomInDown 0.5s both ease;
+}
+
+.home .home-content .text2 {
+  font-size: 70px;
+  font-weight: 600;
+  margin-left: -3px;
+  animation: zoomInDown 0.5s both ease;
+}
+
+.home .home-content .text3 {
+  font-size: 24px;
+  margin: 5px 0;
+  animation: zoomInDown 0.5s both ease;
+}
+
+
+
+footer {
+  background-color: var(--second-color);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+footer span a {
+  color: var(--main-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}
+
+footer{
+  font-family: "poppins", sans-serif;
+  padding: 20px 0;
+}
+
+
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+    transition: all 0.5 ease;
+  }
+  .menu-btn #ico.active::before {
+    content: "\f00d";
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: #171717;
+    text-align: center;
+    padding-top: 250px;
+    transition: all 0.5s ease;
+}
+.navbar .menu.active {
+    left: 0;
+}
+.navbar .menu li {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.home .home-content .text2 {
+    font-size: 65px;
+}
+
+}
+
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.button-list li {
+  list-style: none;
+  display: inline-block;
+}
+
+.button-list li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  user-select: none;
+  transition: color 0.3s ease;
+  letter-spacing: 1.5px;
+}
+
+.btn {
+  background: green;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 35px;
+  cursor: pointer;
+  text-align: center;
+  width: 130px;
+  margin: 0 10px;
+}
+
+audio{
+  display: none;
+}
