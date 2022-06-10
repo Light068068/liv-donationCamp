@@ -111,12 +111,13 @@ nav.sticky .menu li a:hover {
 }
 
 .home .home-content .text1 {
-  font-size: 27px;
+  font-size: 2opx;
+  margin-left: 18px;
   animation: zoomInDown 0.5s both ease;
 }
 
 .home .home-content .text2 {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 600;
   margin-left: -3px;
   animation: zoomInDown 0.5s both ease;
