@@ -47,7 +47,7 @@ html {
   letter-spacing: 2px;
   font-size: 30px;
   font-weight: 600px;
-  color: #fff;
+  color: rgb(231, 13, 13);
   user-select: none;
 }
 
@@ -199,40 +199,53 @@ footer{
 
 }
 
-
-.buttons{
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
+audio{
+  display: none;
 }
 
-.button-list li {
-  list-style: none;
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
   display: inline-block;
 }
 
-.button-list li a {
-  display: block;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 25px;
-  user-select: none;
-  transition: color 0.3s ease;
-  letter-spacing: 1.5px;
-}
-
-.btn {
-  background: green;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 35px;
-  cursor: pointer;
-  text-align: center;
-  width: 130px;
-  margin: 0 10px;
-}
-
-audio{
+.dropdown-content {
   display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+.dropdown:hover, .dropdown:active{
+  height:300px;
 }
