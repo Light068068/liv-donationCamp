@@ -117,10 +117,14 @@ nav.sticky .menu li a:hover {
 }
 
 .home .home-content .text2 {
-  font-size: 70px;
-  font-weight: 600;
-  margin-left: -3px;
+  font-size: 50px;
   animation: zoomInDown 0.5s both ease;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color:rgb(213, 13, 30);
+  font-family: "ubuntu", fantasy;
+  text-decoration: underline;
+  text-align: center;
 }
 
 .home .home-content .text3 {
